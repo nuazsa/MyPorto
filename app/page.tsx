@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Image } from "next/image"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -358,11 +358,10 @@ export default function Portfolio() {
                   <button
                     key={id}
                     onClick={() => scrollToSection(id)}
-                    className={`flex items-center space-x-2 px-3 py-2 rounded-md transition-colors ${
-                      activeSection === id
+                    className={`flex items-center space-x-2 px-3 py-2 rounded-md transition-colors ${activeSection === id
                         ? "text-purple-400 bg-purple-400/10"
                         : "text-gray-300 hover:text-white hover:bg-gray-800 cursor-pointer"
-                    }`}
+                      }`}
                   >
                     <Icon className="w-4 h-4" />
                     <span>{label}</span>
@@ -389,11 +388,10 @@ export default function Portfolio() {
                   <button
                     key={id}
                     onClick={() => scrollToSection(id)}
-                    className={`block w-full text-left px-3 py-2 rounded-md transition-colors ${
-                      activeSection === id
+                    className={`block w-full text-left px-3 py-2 rounded-md transition-colors ${activeSection === id
                         ? "text-purple-400 bg-purple-400/10"
                         : "text-gray-300 hover:text-white hover:bg-gray-800"
-                    }`}
+                      }`}
                   >
                     {label}
                   </button>
@@ -451,7 +449,9 @@ export default function Portfolio() {
                 <div className="relative">
                   <div className="w-80 h-80 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 p-2">
                     <Image
-                      src="/image.jpg?height=400&width=400"
+                      src="/image.jpg"
+                      width={400}
+                      height={400}
                       alt="Nur Azis Saputra"
                       className="w-full h-full rounded-full object-cover bg-gray-800"
                     />
@@ -542,8 +542,10 @@ export default function Portfolio() {
                       onClick={() => openSidebar(project)}
                     >
                       <CardHeader className="p-0">
-                        <img
+                        <Image
                           src={project.image || "/placeholder.svg"}
+                          width={400}
+                          height={400}
                           alt={project.title}
                           className="w-full h-48 object-cover rounded-t-lg"
                         />
@@ -592,8 +594,10 @@ export default function Portfolio() {
                       onClick={() => openSidebar(cert)}
                     >
                       <CardHeader className="p-0">
-                        <img
+                        <Image
                           src={cert.image || "/placeholder.svg"}
+                          width={400}
+                          height={400}
                           alt={cert.title}
                           className="w-full h-48 object-cover rounded-t-lg"
                         />
@@ -765,9 +769,8 @@ export default function Portfolio() {
 
         {/* Sidebar Panel */}
         <div
-          className={`fixed inset-y-0 right-0 w-full sm:w-96 bg-gray-900/95 backdrop-blur-md border-l border-gray-700 transform transition-transform duration-300 ease-in-out z-50 ${
-            sidebarOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`fixed inset-y-0 right-0 w-full sm:w-96 bg-gray-900/95 backdrop-blur-md border-l border-gray-700 transform transition-transform duration-300 ease-in-out z-50 ${sidebarOpen ? "translate-x-0" : "translate-x-full"
+            }`}
         >
           {selectedItem && (
             <div className="h-full flex flex-col">
@@ -779,8 +782,10 @@ export default function Portfolio() {
               </div>
 
               <div className="flex-1 overflow-y-auto p-6 space-y-6">
-                <img
+                <Image
                   src={selectedItem.image || "/placeholder.svg"}
+                  width={400}
+                  height={400}
                   alt={selectedItem.title || selectedItem.name}
                   className="w-full h-48 object-cover rounded-lg"
                 />
