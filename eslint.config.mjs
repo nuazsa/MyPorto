@@ -11,6 +11,17 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+
+  {
+    files: ["**/*.ts", "**/*.tsx"],
+    rules: {
+      // Optional: hilangkan larangan penggunaan 'any' saat perlu
+      "@typescript-eslint/no-explicit-any": "off",
+
+      // Optional: izinkan karakter `'` dan `"` langsung di JSX
+      "react/no-unescaped-entities": "off",
+    },
+  },
 ];
 
 export default eslintConfig;
