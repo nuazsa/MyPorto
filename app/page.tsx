@@ -27,7 +27,7 @@ import {
   Calendar,
   Trophy,
   Send,
-  Twitter,
+  Youtube,
 } from "lucide-react"
 
 // Sample data
@@ -92,49 +92,137 @@ const projects = [
 const certificates = [
   {
     id: 1,
-    title: "AWS Certified Solutions Architect - Professional",
-    description: "Advanced AWS cloud architecture and best practices certification",
-    image: "/placeholder.svg?height=300&width=400",
-    issuer: "Amazon Web Services",
-    date: "2024",
+    title: "PCAP - Programming Essentials in Python",
+    description: "Intermediate-level certification in Python programming by the Python Institute.",
+    image: "/images/certificate/pcap.jpg",
+    issuer: "Python Institute",
+    date: "Jul 2023",
     details:
-      "Professional-level certification demonstrating expertise in designing distributed systems on AWS. Covers advanced architectural patterns, security best practices, cost optimization, and migration strategies for complex enterprise applications.",
-    link: "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+      "Validates comprehensive understanding of Python programming, covering syntax, data structures, functions, OOP, and error handling. Prepares learners for professional development with Python.",
   },
   {
     id: 2,
-    title: "Google Cloud Professional Developer",
-    description: "Google Cloud Platform application development certification",
-    image: "/placeholder.svg?height=300&width=400",
-    issuer: "Google Cloud",
-    date: "2023",
+    title: "MTCNA - MikroTik Certified Network Associate",
+    description: "Entry-level networking certification for MikroTik device configuration and management.",
+    image: "/images/certificate/mtcna.jpg",
+    issuer: "MikroTik",
+    date: "Jan 2024",
     details:
-      "Professional certification focusing on application development, deployment, and monitoring on Google Cloud Platform. Includes expertise in containerization, serverless computing, CI/CD pipelines, and cloud-native development practices.",
-    link: "https://cloud.google.com/certification/cloud-developer",
+      "Covers foundational network concepts including IP addressing, routing, wireless setup, NAT, and firewall management using MikroTik RouterOS.",
+    link: "https://mikrotik.com/training/certificates/c284530c2eb9aafe1747",
   },
   {
     id: 3,
-    title: "Certified Kubernetes Administrator (CKA)",
-    description: "Kubernetes cluster administration and management certification",
-    image: "/placeholder.svg?height=300&width=400",
-    issuer: "Cloud Native Computing Foundation",
-    date: "2023",
+    title: "ZAHIR - Database Fundamentals",
+    description: "Training focused on database operations using Zahir Accounting software.",
+    image: "/images/certificate/zahir.jpg",
+    issuer: "PT Zahir Internasional",
+    date: "Feb 2024",
     details:
-      "Hands-on certification demonstrating skills in Kubernetes cluster administration, including installation, configuration, networking, security, storage, and troubleshooting of Kubernetes environments.",
-    link: "https://www.cncf.io/certification/cka/",
+      "Teaches how to manage accounting-related databases, perform transaction entries, generate reports, and ensure efficient data organization using Zahir.",
   },
   {
     id: 4,
-    title: "MongoDB Certified Developer",
-    description: "MongoDB database development and optimization certification",
-    image: "/placeholder.svg?height=300&width=400",
-    issuer: "MongoDB Inc.",
-    date: "2022",
+    title: "UBSI - IT Bootcamp Software Development",
+    description: "Project-based software development bootcamp.",
+    image: "/images/certificate/ubsi_sd.jpg",
+    issuer: "Universitas Bina Sarana Informatika",
+    date: "Jun 2024",
     details:
-      "Certification covering MongoDB database design, development, and optimization. Includes expertise in data modeling, indexing strategies, aggregation pipelines, and performance tuning for production applications.",
-    link: "https://university.mongodb.com/certification",
+      "An intensive hands-on program covering full-stack development, Git usage, project deployment, clean code, and agile methodology in software engineering.",
   },
-]
+  {
+    id: 5,
+    title: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
+    description: "Introductory programming course using Python.",
+    image: "/images/certificate/memulai_dasar_pemrograman.jpg",
+    issuer: "Dicoding Academy",
+    date: "Sep 2024",
+    details:
+      "Introduces basic programming concepts such as variables, control flow, functions, and simple data structures, using Python as the primary language.",
+  },
+  {
+    id: 6,
+    title: "Pengenalan ke Logika Pemrogarman",
+    description: "Course on logic and computational thinking in programming.",
+    image: "/images/certificate/pengenalan_logika_pemrograman.jpg",
+    issuer: "Dicoding Academy",
+    date: "Sep 2024",
+    details:
+      "Focuses on the basics of logical thinking and structured problem-solving, including flowcharts, algorithms, and pseudocode essential for coding.",
+  },
+  {
+    id: 7,
+    title: "Belajar Dasar Git dengan Github",
+    description: "Introduction to version control using Git and GitHub.",
+    image: "/images/certificate/belajar_dasar_git.jpg",
+    issuer: "Dicoding Academy",
+    date: "Sep 2024",
+    details:
+      "Covers fundamental concepts of version control, Git commands, branching, merging, and collaboration through GitHub repositories and pull requests.",
+  },
+  {
+    id: 8,
+    title: "Memulai Pemrograman dengan Kotlin",
+    description: "Beginner-level course on Kotlin programming language.",
+    image: "/images/certificate/memulai_pemrograman_dengan_kotlin.jpg",
+    issuer: "Dicoding Academy",
+    date: "Sep 2024",
+    details:
+      "Teaches Kotlin syntax and programming constructs including variables, conditionals, loops, functions, and object-oriented concepts for Android development.",
+  },
+  {
+    id: 9,
+    title: "Belajar Membuat Aplikasi Android untuk Pemula",
+    description: "Introduction to building Android apps using Kotlin.",
+    image: "/images/certificate/belajar_membuat_aplikasi_android_pemula.jpg",
+    issuer: "Dicoding Academy",
+    date: "Sep 2024",
+    details:
+      "Focuses on the basics of Android development, including activity lifecycle, UI components, and simple user interaction using Android Studio and Kotlin.",
+  },
+  {
+    id: 10,
+    title: "Belajar Fundamental Aplikasi Android",
+    description: "Fundamental skills for modern Android app development.",
+    image: "/images/certificate/belajar_fundamental_android.jpg",
+    issuer: "Dicoding Academy",
+    date: "Sep 2024",
+    details:
+      "Covers fundamental Android concepts like ViewModel, LiveData, Navigation, Jetpack components, and app architecture suitable for scalable applications.",
+  },
+  {
+    id: 11,
+    title: "Belajar Dasar AI",
+    description: "Introductory course on Artificial Intelligence fundamentals.",
+    image: "/images/certificate/belajar_dasar_ai.jpg",
+    issuer: "Dicoding Academy",
+    date: "Oct 2024",
+    details:
+      "Explores AI concepts such as machine learning, neural networks, and data preprocessing. Provides an understanding of how AI is applied in real-world systems.",
+  },
+  {
+    id: 12,
+    title: "Belajar Penerapan Machine Learning untuk Android",
+    description: "Integrating machine learning models into Android apps.",
+    image: "/images/certificate/belajar_penerapan_machine_learning.jpg",
+    issuer: "Dicoding Academy",
+    date: "Oct 2024",
+    details:
+      "Demonstrates how to use ML Kit and TensorFlow Lite to embed trained machine learning models into Android applications for features like image recognition and text analysis.",
+  },
+  {
+    id: 13,
+    title: "Belajar Pengembangan Aplikasi Android Intermediate",
+    description: "Intermediate-level Android app development course.",
+    image: "/images/certificate/belajar_pengembangan_aplikasi_android_intermediate.jpg",
+    issuer: "Dicoding Academy",
+    date: "Nov 2024",
+    details:
+      "Deepens knowledge in Android development, including advanced UI, data persistence with Room, API integration, testing, and performance optimization.",
+  },
+];
+
 
 const techStack = [
   {
@@ -470,7 +558,7 @@ export default function Portfolio() {
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
                     <FolderOpen className="w-6 h-6 text-white" />
                   </div>
-                  <div className="text-3xl font-bold text-white mb-2">15+</div>
+                  <div className="text-3xl font-bold text-white mb-2">45+</div>
                   <div className="text-lg font-semibold text-purple-400 mb-1">Projects Completed</div>
                   <div className="text-sm text-gray-400">Delivered successful solutions</div>
                 </CardContent>
@@ -481,7 +569,7 @@ export default function Portfolio() {
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mx-auto mb-4">
                     <Calendar className="w-6 h-6 text-white" />
                   </div>
-                  <div className="text-3xl font-bold text-white mb-2">4</div>
+                  <div className="text-3xl font-bold text-white mb-2">1</div>
                   <div className="text-lg font-semibold text-blue-400 mb-1">Years of Experience</div>
                   <div className="text-sm text-gray-400">Professional development</div>
                 </CardContent>
@@ -492,7 +580,7 @@ export default function Portfolio() {
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
                     <Trophy className="w-6 h-6 text-white" />
                   </div>
-                  <div className="text-3xl font-bold text-white mb-2">10</div>
+                  <div className="text-3xl font-bold text-white mb-2">50+</div>
                   <div className="text-lg font-semibold text-purple-400 mb-1">Technologies Mastered</div>
                   <div className="text-sm text-gray-400">Modern tech stack expertise</div>
                 </CardContent>
@@ -512,21 +600,21 @@ export default function Portfolio() {
               <TabsList className="grid w-full grid-cols-3 mb-8 bg-gray-800 border border-gray-700">
                 <TabsTrigger
                   value="projects"
-                  className="flex items-center cursor-pointer space-x-2 data-[state=active]:bg-purple-500/20 data-[state=active]:text-purple-400"
+                  className="text-white flex items-center cursor-pointer space-x-2 data-[state=active]:bg-purple-500/20 data-[state=active]:text-purple-400"
                 >
                   <Code className="w-4 h-4" />
                   <span>Projects</span>
                 </TabsTrigger>
                 <TabsTrigger
                   value="certificates"
-                  className="flex items-center cursor-pointer space-x-2 data-[state=active]:bg-blue-500/20 data-[state=active]:text-blue-400"
+                  className="text-white flex items-center cursor-pointer space-x-2 data-[state=active]:bg-blue-500/20 data-[state=active]:text-blue-400"
                 >
                   <Award className="w-4 h-4" />
                   <span>Certificates</span>
                 </TabsTrigger>
                 <TabsTrigger
                   value="tech-stack"
-                  className="flex items-center cursor-pointer space-x-2 data-[state=active]:bg-purple-500/20 data-[state=active]:text-purple-400"
+                  className="text-white flex items-center cursor-pointer space-x-2 data-[state=active]:bg-purple-500/20 data-[state=active]:text-purple-400"
                 >
                   <Layers className="w-4 h-4" />
                   <span>Tech Stack</span>
@@ -535,7 +623,7 @@ export default function Portfolio() {
 
               <TabsContent value="projects" className="space-y-6">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {projects.slice(0, showMoreProjects ? projects.length : 6).map((project) => (
+                  {projects.slice(0, showMoreProjects ? projects.length : 3).map((project) => (
                     <Card
                       key={project.id}
                       className="bg-gray-800/50 border-gray-700 hover:border-purple-500/50 transition-all duration-300 cursor-pointer transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/10"
@@ -572,12 +660,12 @@ export default function Portfolio() {
                   ))}
                 </div>
 
-                {projects.length > 6 && (
+                {projects.length > 3 && (
                   <div className="text-center">
                     <Button
                       onClick={() => setShowMoreProjects(!showMoreProjects)}
                       variant="outline"
-                      className="border-purple-500 text-purple-400 hover:bg-purple-500/10"
+                      className="border-purple-500 text-purple-400 hover:bg-purple-500/10 hover:text-white"
                     >
                       {showMoreProjects ? "Show Less" : "See More Projects"}
                     </Button>
@@ -587,7 +675,7 @@ export default function Portfolio() {
 
               <TabsContent value="certificates" className="space-y-6">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {certificates.slice(0, showMoreCertificates ? certificates.length : 6).map((cert) => (
+                  {certificates.slice(0, showMoreCertificates ? certificates.length : 3).map((cert) => (
                     <Card
                       key={cert.id}
                       className="bg-gray-800/50 border-gray-700 hover:border-blue-500/50 transition-all duration-300 cursor-pointer transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/10"
@@ -596,10 +684,10 @@ export default function Portfolio() {
                       <CardHeader className="p-0">
                         <Image
                           src={cert.image || "/placeholder.svg"}
-                          width={400}
+                          width={444}
                           height={400}
                           alt={cert.title}
-                          className="w-full h-48 object-cover rounded-t-lg"
+                          className="w-full h-64 object-cover rounded-t-lg"
                         />
                       </CardHeader>
                       <CardContent className="p-6">
@@ -618,12 +706,12 @@ export default function Portfolio() {
                   ))}
                 </div>
 
-                {certificates.length > 6 && (
+                {certificates.length > 3 && (
                   <div className="text-center">
                     <Button
                       onClick={() => setShowMoreCertificates(!showMoreCertificates)}
                       variant="outline"
-                      className="border-blue-500 text-blue-400 hover:bg-blue-500/10"
+                      className="border-blue-500 text-blue-400 hover:bg-blue-500/10 hover:text-white"
                     >
                       {showMoreCertificates ? "Show Less" : "See More Certificates"}
                     </Button>
@@ -678,7 +766,7 @@ export default function Portfolio() {
                   <h4 className="text-lg font-semibold text-white">Find me on</h4>
                   <div className="flex space-x-4">
                     <a
-                      href="https://github.com/nurazis"
+                      href="https://github.com/nuazsa"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-4 bg-gray-800 rounded-full hover:bg-purple-500/20 hover:border-purple-500 border border-gray-700 transition-all duration-300 transform hover:scale-110"
@@ -686,7 +774,7 @@ export default function Portfolio() {
                       <Github className="w-6 h-6 text-purple-400" />
                     </a>
                     <a
-                      href="https://linkedin.com/in/nurazis"
+                      href="https://linkedin.com/in/nurazissaputra"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-4 bg-gray-800 rounded-full hover:bg-blue-500/20 hover:border-blue-500 border border-gray-700 transition-all duration-300 transform hover:scale-110"
@@ -694,25 +782,25 @@ export default function Portfolio() {
                       <Linkedin className="w-6 h-6 text-blue-400" />
                     </a>
                     <a
-                      href="mailto:nur.azis@example.com"
+                      href="mailto:nurazissaputra@gmail.com"
                       className="p-4 bg-gray-800 rounded-full hover:bg-purple-500/20 hover:border-purple-500 border border-gray-700 transition-all duration-300 transform hover:scale-110"
                     >
                       <Mail className="w-6 h-6 text-purple-400" />
                     </a>
                     <a
-                      href="https://twitter.com/nurazis"
+                      href="https://youtube.com/@nurazissaputra"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-4 bg-gray-800 rounded-full hover:bg-blue-500/20 hover:border-blue-500 border border-gray-700 transition-all duration-300 transform hover:scale-110"
                     >
-                      <Twitter className="w-6 h-6 text-blue-400" />
+                      <Youtube className="w-6 h-6 text-blue-400" />
                     </a>
                   </div>
                 </div>
               </div>
 
               {/* Contact Form */}
-              <Card className="bg-gray-800/50 border-gray-700">
+              <Card className="pt-6 bg-gray-800/50 border-gray-700">
                 <CardHeader>
                   <CardTitle className="text-white text-xl">Send a Message</CardTitle>
                   <CardDescription className="text-gray-400">I'll get back to you as soon as possible.</CardDescription>
@@ -776,7 +864,7 @@ export default function Portfolio() {
             <div className="h-full flex flex-col">
               <div className="flex items-center justify-between p-6 border-b border-gray-700">
                 <h3 className="text-xl font-semibold text-white">{selectedItem.title || selectedItem.name}</h3>
-                <Button variant="ghost" size="sm" onClick={closeSidebar} className="text-gray-400 hover:text-white">
+                <Button variant="ghost" size="sm" onClick={closeSidebar} className="text-gray-400 border-gray-500 hover:border-purple-500 hover:bg-purple-500/10 hover:text-white bg-transparent">
                   <X className="w-5 h-5" />
                 </Button>
               </div>
@@ -787,7 +875,7 @@ export default function Portfolio() {
                   width={400}
                   height={400}
                   alt={selectedItem.title || selectedItem.name}
-                  className="w-full h-48 object-cover rounded-lg"
+                  className="w-full object-cover rounded-lg"
                 />
 
                 <div className="space-y-4">
@@ -863,7 +951,7 @@ export default function Portfolio() {
                     <Button
                       asChild
                       variant="outline"
-                      className="border-blue-500 text-blue-400 hover:bg-blue-500/10 bg-transparent w-full"
+                      className="border-blue-500 text-blue-400 hover:bg-blue-500/10 bg-transparent hover:text-white w-full"
                     >
                       <a href={selectedItem.demo} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
@@ -875,7 +963,7 @@ export default function Portfolio() {
                     <Button
                       asChild
                       variant="outline"
-                      className="border-purple-500 text-purple-400 hover:bg-purple-500/10 bg-transparent w-full"
+                      className="border-purple-500 text-purple-400 hover:bg-purple-500/10 hover:text-white bg-transparent w-full"
                     >
                       <a href={selectedItem.link} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
