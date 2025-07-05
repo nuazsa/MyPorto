@@ -34,60 +34,79 @@ import {
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with modern payment integration",
-    image: "/placeholder.svg?height=300&width=400",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe", "Docker"],
+    title: "Kerjadiluar.id",
+    description: "A job preparation and placement platform providing training, certification, and talent matchmaking.",
+    image: "/images/projects/kerjadiluar.png",
+    tech: ["Next.js", "Express.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
     details:
-      "A comprehensive e-commerce platform featuring user authentication, product catalog, shopping cart, payment processing with Stripe, and admin dashboard. Built with modern web technologies and containerized with Docker for easy deployment. Includes real-time inventory management and order tracking.",
-    github: "https://github.com/nurazis/ecommerce-platform",
-    demo: "https://ecommerce-demo.nurazis.dev",
+      "Kerjadiluar.id is a professional web platform designed to help individuals prepare for overseas job opportunities. It features structured training programs, official certification exams, and an automated headhunter-style job matching system. The system enables users to register for training, validate their competencies, and get connected with industry-relevant job openings. Built using a modern stack with Next.js and Tailwind CSS for responsive UI and Express.js for server-side logic.",
+    demo: "https://kerjadiluar.id/",
   },
   {
     id: 2,
-    title: "Task Management System",
-    description: "Collaborative project management tool with real-time updates",
-    image: "/placeholder.svg?height=300&width=400",
-    tech: ["Next.js", "TypeScript", "Prisma", "Socket.io", "Redis"],
+    title: "Jayadewata Academy",
+    description: "A basketball training and tournament platform with membership and event management.",
+    image: "/images/projects/Jayadewata.png",
+    tech: ["Laravel", "Filament", "MySQL", "Tailwind CSS"],
     details:
-      "A real-time collaborative task management application with drag-and-drop functionality, team collaboration features, and progress tracking. Features include real-time notifications, deadline management, file attachments, and comprehensive reporting dashboard.",
-    github: "https://github.com/nurazis/task-manager",
-    demo: "https://tasks.nurazis.dev",
+      "Jayadewata Academy is an integrated platform to support youth basketball training and events. It includes features such as player and team registration, tournament enrollment, dynamic training programs, blog articles, and partner showcases. The system also provides a flexible structure to manage coaches, club data, and online announcements. Built with Laravel and styled using Tailwind CSS for responsive modern UI.",
+    demo: "https://jayadewataacademy.com/",
   },
   {
     id: 3,
-    title: "Weather Analytics Dashboard",
-    description: "Interactive weather data visualization with predictive analytics",
-    image: "/placeholder.svg?height=300&width=400",
-    tech: ["Vue.js", "Python", "FastAPI", "D3.js", "AWS"],
+    title: "Tigadaun Production",
+    description: "A full-featured e-commerce platform with secure checkout and admin dashboard.",
+    image: "/images/projects/Tigadaun.png",
+    tech: ["Laravel", "Filament", "MySQL", "Stripe API"],
     details:
-      "An advanced weather analytics dashboard featuring real-time weather data, historical analysis, and predictive modeling. Includes interactive charts, location-based forecasting, and API integration with multiple weather services.",
-    github: "https://github.com/nurazis/weather-dashboard",
-    demo: "https://weather.nurazis.dev",
+      "Tigadaun Production is an e-commerce web application built with Laravel and Filament for streamlined backend management. It includes user authentication, product catalog, shopping cart, and secure payment integration using Stripe. The platform supports real-time order tracking and role-based admin management. Designed for a small business, it focuses on usability and operational efficiency.",
+    demo: "https://tigadaunproduction.com/",
   },
   {
     id: 4,
-    title: "AI Code Assistant",
-    description: "AI-powered development tool for code optimization and review",
-    image: "/placeholder.svg?height=300&width=400",
-    tech: ["Python", "FastAPI", "OpenAI", "React", "MongoDB"],
+    title: "MaggotIN",
+    description: "A smart maggot cultivation assistant app for sustainable waste management.",
+    image: "/images/projects/maggotin.png",
+    tech: ["Kotlin", "Python", "TensorFlow", "Node.js", "Firebase", "Google Cloud Vision"],
     details:
-      "An intelligent code assistant that helps developers with code review, optimization suggestions, and automated documentation generation. Features include syntax analysis, performance recommendations, and integration with popular IDEs.",
-    github: "https://github.com/nurazis/ai-code-assistant",
-    demo: "https://codeai.nurazis.dev",
+      "MaggotIN is an Android-based application designed to identify maggot growth stages using image classification and provide intelligent recommendations for care and feeding. It helps users manage organic waste more sustainably through guided maggot farming. The app utilizes TensorFlow-powered image recognition, Firebase for authentication and database, and supports multilingual education content on maggot cultivation. Developed during the Bangkit program under Kampus Merdeka initiative.",
+    github: "https://github.com/capstone-MaggotIn",
   },
   {
     id: 5,
-    title: "Blockchain Voting System",
-    description: "Secure and transparent voting platform using blockchain technology",
-    image: "/placeholder.svg?height=300&width=400",
-    tech: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS"],
+    title: "QR-Code Attendance System",
+    description: "A QR-based attendance tracking system for efficient and automated presence logging.",
+    image: "/images/projects/qr-code-attend.png",
+    tech: ["HTML", "CSS", "PHP", "MySQL", "FPDF", "JavaScript (QR Scanner)"],
     details:
-      "A decentralized voting system built on Ethereum blockchain ensuring transparency, security, and immutability. Features include voter verification, real-time results, and audit trails with smart contract integration.",
-    github: "https://github.com/nurazis/blockchain-voting",
-    demo: "https://vote.nurazis.dev",
+      "QR-Code Attendance System is a personal project designed to simplify attendance tracking in educational or event settings. It features QR code generation and scanning, session and schedule management, as well as automated attendance reports exportable as PDF. The system supports role-based access for admins and students, dynamic schedule display, and real-time QR mapping for each class session. Built using native PHP and MySQL, it offers a lightweight and accessible attendance solution.",
+    github: "https://github.com/nuazsa/QR-Attendance",
   },
-]
+  {
+    id: 6,
+    title: "Online Food Ordering",
+    description:
+      "A digital ordering platform for restaurants and cafes with seat selection and order tracking.",
+    image: "/images/projects/online-restaurant-food.png",
+    tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    details:
+      "Online Food Ordering is a responsive web application that allows customers to browse menus, select seating, place orders, and make payments in an integrated system. The admin panel enables item management and real-time order monitoring. Designed for cafes and restaurants to streamline service and improve customer experience.",
+    github: "https://github.com/nuazsa/javajunction",
+    demo: "http://coffeeshop.nurazissaputra.my.id/",
+  },
+  {
+    id: 7,
+    title: "Sistem Pakar Dempster",
+    description:
+      "A web-based expert system that recommends data models using Dempster-Shafer theory.",
+    image: "/images/projects/sistem-pakar.png",
+    tech: ["HTML", "CSS", "PHP", "MySQL", "JavaScript"],
+    details:
+      "Sistem Pakar Dempster is a web-based expert system for selecting suitable data models based on user input. It uses Dempster-Shafer theory to calculate confidence levels and recommend the best model type (hierarchical, relational, multidimensional). Features include statement management, result visualization, and knowledge base customization.",
+    github: "https://github.com/nuazsa/SitemPakar",
+    demo: "http://sistempakar.nurazissaputra.my.id/",
+  },
+];
 
 const certificates = [
   {
@@ -517,10 +536,16 @@ export default function Portfolio() {
 
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-8 py-3 text-lg rounded-full cursor-pointer transition-all duration-300 transform hover:scale-105">
-                    <Download className="mr-2 w-7 h-5" />
-                    Download CV
-                  </Button>
+                  <a
+                    href="https://drive.google.com/file/d/1fme78wNe-1N1IgolE10eD5vgI9rq0Q27/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-8 py-3 text-lg rounded-full cursor-pointer transition-all duration-300 transform hover:scale-105">
+                      <Download className="mr-2 w-7 h-5" />
+                      Download CV
+                    </Button>
+                  </a>
                   <Button
                     onClick={() => scrollToSection("portfolio")}
                     variant="outline"
